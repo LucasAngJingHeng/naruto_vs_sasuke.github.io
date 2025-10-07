@@ -1,0 +1,120 @@
+.main-title {
+    background-color: chartreuse;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 8px;
+    }
+
+.main-pic {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: solid 10px whitesmoke;
+    border-radius: 100px;
+}
+
+.main-table {
+    width: 90%;
+    margin: auto;
+    background-color: whitesmoke;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: darkred;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.main-table-header{
+    background-color: aquamarine;
+    font-size: 25px;
+}
+
+.main-table td{
+    padding: 20px;
+}
+
+.navbar{
+    background-color: azure;
+    font-size: 25px;
+}
+
+.fade-in {
+    background-color: darkturquoise;
+    font-size: 30px;
+    text-align: center;
+    font-family: inherit;
+    padding: 20px;
+    color: blueviolet;
+    opacity: 0;
+    animation: fade-in-anim 2s ease-in forwards;
+    height: 50px;
+}
+
+@keyframes fade-in-anim {
+    from{
+        opacity: 0;
+        font-size: 1px;
+    }
+
+    to {
+        opacity: 1;
+        font-size: 30px;
+    }
+}
+
+.color-changing{
+    background-color: black;
+    height: 55px;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: color-anim 0.3s infinite;
+}
+
+@keyframes color-anim {
+    0% {color: tomato;}
+    20% {color: lime;}
+    40% {color: yellow;}
+    60% {color: cyan;}
+    80% {color: magenta;}
+    100% {color: violet;}
+}
+
+.glide-in-out{
+    background-color: wheat;
+    font-size: 30px;
+    text-align: center;
+    font-family: initial;
+    color: darkcyan;
+    width: 100%;
+    padding: 30px;
+    animation: glide-x-anim 6s ease-in-out infinite;
+}
+@keyframes glide-x-anim{
+    0%{transform: translateX(-100%);}
+    20%{transform: translateX(0%);}
+    60%{transform: translateX(0%);}
+    80%{transform: translateX(100%);}
+    100%{transform: translateX(100%);}
+}
+.glide-in-out2{
+    font-size: 30px;
+    text-align: center;
+    font-family: initial;
+    color: darkcyan;
+    width: 100%;
+    animation: glide-x-anim2 6s ease-in-out infinite;
+}
+@keyframes glide-x-anim2{
+    0%{transform: translateX(100%);}
+    20%{transform: translateX(0%);}
+    60%{transform: translateX(0%);}
+    80%{transform: translateX(-100%);}
+    100%{transform: translateX(-100%);}
+}
